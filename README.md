@@ -1,0 +1,1 @@
+Este es mi test técnico solicitado para la posición de FullStack Developer. Aquí está tanto el frontend usando Angular 16 como el backend usando NestJs. También adjunto los archivos Excel que he empleado para realizar pruebas.
