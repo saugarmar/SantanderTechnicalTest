@@ -24,6 +24,10 @@ export class CandidatesService {
       throw new Error('Excel file is empty');
     }
 
+    if (rows.length > 1) {
+      throw new Error('Excel file has more than one row')
+    }
+
     const excelData: any = rows[0];
 
     return {
