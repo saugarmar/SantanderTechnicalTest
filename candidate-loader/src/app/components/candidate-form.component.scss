@@ -1,0 +1,52 @@
+:host {
+  display: block;
+  background-color: #f5f7fa; /* light neutral background */
+  padding: 40px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  background-color: #ffffff; /* white form card */
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* Stack elements vertically */
+  }
+}
+
+.col-full {
+  grid-column: 1 / -1;
+}
+
+h1.col-full {
+  margin-bottom: 16px;
+  color: #3f51b5;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+input[type="file"] {
+  margin-top: 8px;
+}
+
+.file-label {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.no-data-row td {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: #3f51b5; // Optional: give it a contrast background
+}
